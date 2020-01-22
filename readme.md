@@ -1,7 +1,7 @@
 # Linq Up #
 
-And exercise in changing code to use LINQ.
-This sample code doing some operations on a collection without using LINQ. Refactor this to make use of LINQ.
+An exercise in changing code to use LINQ.
+This sample code doing some operations on a collection without using LINQ. You can refactor this to make use of LINQ.
 
 The part to refactor is in the `Group` class
 
