@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LinqUp
 {
@@ -256,6 +257,21 @@ namespace LinqUp
                 names.AddRange(member.Aliases);
             }
             return names;
+        }
+
+		/// <summary>
+		/// Multiply all ages in the group
+		/// </summary>
+		/// <returns>The total of all ages multiplied</returns>
+		public long GetGroupAgeMultiplied()
+		{
+            var result = 1;
+			foreach (var member in Members)
+			{
+                return result * member.AgeInYears;
+			}
+
+            return result;
         }
     }
 }
