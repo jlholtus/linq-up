@@ -265,5 +265,20 @@ namespace LinqUpTests
         }
 
         #endregion Tests for GetAllNamesAndAliases
+
+        #region Tests for GetGroupAgeMultiplied
+
+        [Fact]
+        public void GivenMultiplyAgeOfMembers()
+        {
+			var group = new Group(new List<Person> { TestPersons[0], TestPersons[1] });
+			var multiply = group.GetGroupAgeMultiplied();
+
+            Assert.Equal(TestPersons[0].AgeInYears * TestPersons[1].AgeInYears, multiply);
+		}
+
+        #endregion Tests for GetGroupAgeMultiplied
+
+
     }
 }
